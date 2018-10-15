@@ -1,15 +1,6 @@
 version: '3'
 
 services:
-  db:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: toor
-      MYSQL_DATABASE: test
-      MYSQL_USER: test
-      MYSQL_PASSWORD: test
-    ports:
-      - "3306:3306"
   web:
     image: php:7.2.2-apache
     container_name: php_web
